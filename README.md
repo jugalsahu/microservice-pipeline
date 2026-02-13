@@ -39,6 +39,7 @@ Perfect for building production-ready distributed systems.
   │ Service A  │     │ Service B  │     │ Service C  │
   └────────────┘     └────────────┘     └────────────┘
 
+         Redis (Cache)        RabbitMQ (Message Broker)
 ```
 
 ---
@@ -126,7 +127,28 @@ Make sure Docker is installed.
 docker-compose up -d
 ```
 
+### Services Started:
 
+| Service | Port |
+|----------|-------|
+| Redis | 6379 |
+| RabbitMQ | 5672 |
+| RabbitMQ Dashboard | 15672 |
+
+RabbitMQ Login:
+
+```
+Username: admin
+Password: admin
+```
+
+To stop services:
+
+```bash
+docker-compose down
+```
+
+---
 
 # 🚀 Run Development Mode
 

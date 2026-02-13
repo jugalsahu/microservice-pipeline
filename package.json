@@ -1,0 +1,59 @@
+{
+    "name": "microservice-pipeline",
+    "version": "1.0.0",
+    "main": "dist/app.js",
+    "types": "dist/app.d.ts",
+    "scripts": {
+        "dev": "ts-node-dev --respawn --transpile-only src/app.ts",
+        "build": "tsc",
+        "start": "node dist/app.js",
+        "install-all": "ts-node-dev --transpile-only src/install-all.ts",
+        "uninstall-all": "ts-node-dev --transpile-only src/uninstall-all.ts"
+    },
+    "keywords": [
+        "microservices",
+        "microservice architecture",
+        "api gateway",
+        "nodejs microservice",
+        "typescript microservice",
+        "express gateway",
+        "monorepo",
+        "docker microservice",
+        "rabbitmq",
+        "redis",
+        "service generator",
+        "scalable backend",
+        "backend boilerplate",
+        "microservice cli"
+    ],
+    "author": {
+        "name": "Jugal Kishore Sahu",
+        "email": "jugalasahu@gmail.com",
+        "url": "https://github.com/jugalsahu"
+    },
+    "license": "ISC",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/jugalsahu/microservice-pipeline.git"
+    },
+    "description": "A scalable TypeScript microservice monorepo with API Gateway, service generator CLI, Docker support, Redis and RabbitMQ integration.",
+    "dependencies": {
+        "all": "^0.0.0",
+        "concurrently": "^9.2.1",
+        "cors": "^2.8.5",
+        "dotenv": "^17.0.0",
+        "express": "^5.1.0",
+        "http-proxy-middleware": "^3.0.5",
+        "microservice-pipeline": "^1.0.2",
+        "mongoose": "^8.16.1",
+        "morgan": "^1.10.0"
+    },
+    "devDependencies": {
+        "@types/cors": "^2.8.19",
+        "@types/express": "^5.0.3",
+        "@types/morgan": "^1.9.10",
+        "@types/node": "^24.0.7",
+        "ts-node-dev": "^2.0.0",
+        "typescript": "^5.8.3"
+    }
+}

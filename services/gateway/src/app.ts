@@ -17,8 +17,3 @@ app.use(
     }),
 );
 app.use(morgan("dev"));
-
-app.use("/auth", createProxyMiddleware({
-	target: 'http://localhost:4001/auth',
-	changeOrigin: true
-}))
